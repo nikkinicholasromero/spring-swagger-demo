@@ -4,6 +4,7 @@ import com.demo.model.SomeModel;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
+@RequestMapping("/main")
 public class MainController {
     @GetMapping("/{somePathVariable}")
     public String getEndpoint(
